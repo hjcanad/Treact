@@ -42,7 +42,6 @@ head {
 section {
     padding: 0 32px;
     display: block;
-    unicode-bidi: isolate;
 }
 
 main {
@@ -58,9 +57,8 @@ NAVBAR ↓
 
 
 nav {
+    padding-top: 32px 32px 0 32px;
     display: flex;
-    padding-top: 32px;
-    unicode-bidi: isolate;
 }
 
 
@@ -75,9 +73,6 @@ nav {
     margin: 0 auto;
 }
 
-div {
-    unicode-bidi: isolate;
-}
 
 .nav__logo {
     display: flex;
@@ -203,7 +198,7 @@ button {
     border: none;
 }
 
-.menu--open .modal {
+.menu--open .menu {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
@@ -224,8 +219,6 @@ HEADER / ABOUT US ↓
 
 header {
     position: relative;
-    display: block;
-    unicode-bidi: isolate;
 }
 
 .container {
