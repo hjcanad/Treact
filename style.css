@@ -4,13 +4,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', system-ui;
+    font-family: 'Inter', sans-serif;
     color: #243e63;
 }
 
-body {
+head {
+    display: none;
+}
+
+
+.body {
     max-width: 100vw;
     overflow-x: hidden;
+    display: block;
 }
 
 .row {
@@ -35,6 +41,8 @@ body {
 
 section {
     padding: 0 32px;
+    display: block;
+    unicode-bidi: isolate;
 }
 
 main {
@@ -52,11 +60,23 @@ NAVBAR ↓
 nav {
     display: flex;
     padding-top: 32px;
+    unicode-bidi: isolate;
 }
+
 
 .nav__row {
     display: flex;
     justify-content: space-between;
+}
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+div {
+    unicode-bidi: isolate;
 }
 
 .nav__logo {
@@ -73,6 +93,8 @@ nav {
 
 img {
     width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 .nav__logo--title {
@@ -83,18 +105,61 @@ img {
     letter-spacing: 0.6px;
 }
 
+.nav__links {
+display: flex;
+align-items: center;
+padding-bottom: 2px;
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 4px;
+    letter-spacing: 0.35px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    transition: all 300ms;
+    margin: 0 24px;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+.login {
+margin-left: 48px;
+}
+
+.nav__link--primary {
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 9999px;
+    color: #fff;
+    background-color: #6415ff;
+    line-height: 1.5;
+    border: none;
+    width: auto;
+    transition: all 300ms ease;
+}
+
 .btn__menu {
     display: none;
-    background: transparent;
+    background-color: transparent;
     border: none;
     transition: all 300ms ease;
+}
+
+button {
+    cursor: pointer;
 }
 
 .btn__menu--svg:hover {
     filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%) contrast(115%);
 }
 
-.modal {
+.menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -112,7 +177,7 @@ img {
     transition: all 300ms ease;
 }
 
-.modal__links {
+.menu__links {
     width: 100%;
     height: 100%;
     display: flex;
@@ -120,7 +185,7 @@ img {
     align-items: center;
 }
 
-.modal__link {
+.menu__link {
     color: #1a202c;
     font-size: 18px;
     font-weight: 600;
@@ -130,7 +195,7 @@ img {
     border-bottom: 2px solid transparent;
 }
 
-.modal__link--primary {
+.menu__link--primary {
     color: #f7fafc;
     padding: 12px 32px;
     background: #6415ff;
@@ -157,11 +222,117 @@ HEADER / ABOUT US ↓
 
 */
 
+header {
+    position: relative;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.container {
+    padding: 96px 0;
+}
 
 header .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header__description {
+    width: 40%;
+}
+
+h1 {
+    font-size: 48px;
+    color: #1a202c;
+    line-height: 1.25;
+}
+
+.header__description--para {
+    margin: 32px 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.header__email {
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__email--input {
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: border-color 300ms;
+}
+
+.header__email--btn {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header__customer--title {
+    margin-top: 80px;
+    color: #a0aea0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.header__customer {
+    margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
+}
+
+.header__img--wrapper {
+    width: calc(100% - 40%);
+}
+
+.header__img {
+    width: 100%;
+    max-width: 768px;
+}
+
+img {
+    width: 100%;
 }
 
 
