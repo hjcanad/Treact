@@ -232,6 +232,22 @@ header {
     position: relative;
 }
 
+@media (max-width: 900px) {
+    header .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__description {
+        width: 100%;
+    }
+
+    .header__img--wrapper {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
 header .row {
     display: flex;
     align-items: center;
@@ -432,7 +448,7 @@ main {
 
 @media (max-width: 768px) {
 .feature { 
-    max-width: 384px;
+    width: 100%;
     } 
 }
 
@@ -799,8 +815,12 @@ VALUES ↓
 }
 
 @media (max-width: 768px) {
-    .value {
-        align-items: center;
+    .values {
+       flex-direction: column;
+    }
+    .values__description,
+    .values__img {
+        width: 100%;
     }
 }
 
@@ -1354,7 +1374,7 @@ FOOTER ↓
 
 */
 
-@media (max-width: 1024) {
+@media (max-width: 1024px) {
     footer {
         padding: 80px 32px;
     }
