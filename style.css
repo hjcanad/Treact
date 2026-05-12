@@ -444,7 +444,7 @@ main {
 
 @media (max-width: 1024px) {
     .features {
-        max-width: 768px;   
+        max-width: 1024px;   
     }
 }
 
