@@ -58,6 +58,8 @@ NAVBAR ↓
 nav {
     padding: 32px 32px 0 32px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -475,6 +477,8 @@ main {
     .feature__row {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        gap: 1rem;
     }
 
     .feature__text {
@@ -668,6 +672,26 @@ STEPS ↓
 @media (max-width: 768px) {
     #steps .row, #testimonials .row {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial__img,
+    .testimonials__description {
+        width: 100%;
+    }
+    
+    .testimonials__description {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .testimonial__bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .testimonial__buttons {
+        justify-content: center;
     }
 }
 
@@ -714,6 +738,8 @@ STEPS ↓
     .step {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        gap: 0.75rem;
     }
 }
 
@@ -1146,6 +1172,7 @@ TESTIMONIALS ↓
     .testimonials__description {
         padding-left: 0;
         text-align: center;
+        width: 100%;
     }
 }
 
@@ -1284,6 +1311,7 @@ START / CALL TO ACTION ↓
         padding-bottom: 5rem;
     }
 } 
+
 
 #start .row {
     position: relative;
@@ -1435,6 +1463,18 @@ footer {
 @media (max-width: 768px) {
 .footer__columns {
     justify-content: flex-start;
+}
+
+.start__row {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.start__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 }
 
@@ -1637,99 +1677,4 @@ MOBILE RESPONSIVENESS ↓
     main {
         margin-bottom: 80px;
     }
-}
-
-/* FINAL MOBILE FIXES — PLACE AT VERY BOTTOM OF CSS */
-
-@media (max-width: 768px) {
-
-  /* NAVBAR */
-  nav {
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav__row {
-    flex-direction: row;
-  }
-
-  .nav__links {
-    display: none;
-  }
-
-  .btn__menu {
-    display: block;
-  }
-
-  /* HEADER */
-  header .row {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .header__description,
-  .header__img--wrapper {
-    width: 100%;
-  }
-
-  /* FEATURES — stack vertically */
-  .feature__row {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .feature {
-    width: 100%;
-  }
-
-  /* STEPS — number above text */
-  .step {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.75rem;
-  }
-
-  /* VALUES — stack vertically */
-  .values {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .values__description,
-  .values__img {
-    width: 100%;
-  }
-
-  /* TESTIMONIALS — image, text, arrows stacked */
-  #testimonials .row {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .testimonial__bottom {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .testimonial__buttons {
-    justify-content: center;
-  }
-
-  /* START SECTION — stack text + buttons */
-  .start__row {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .start__buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
 }
