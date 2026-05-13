@@ -432,7 +432,7 @@ main {
 .section__title {
     font-weight: 900;
     color: rgb(36, 62, 99);
-    line-height: 1.5;
+    line-height: 1.25;
     margin: 16px 0;
     letter-spacing: 0.025em;
 }
@@ -623,7 +623,7 @@ QUALITY WORK ↓
     font-weight: 900; 
     color: rgb(36, 62, 99);
     line-height: 1.25;
-    margin: 16px 0 25 0;
+    margin: 16px 0 25px 0;
     letter-spacing: 0.025em;
 }
 
@@ -675,8 +675,7 @@ img {
 }
 
 .quality__grid {
-    transform: translateX(50%) translateY(50%)
-    scaleX(1) scaleY(1);
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
     width: 80px;
     height: 80px;
     position: absolute;
@@ -788,7 +787,7 @@ STEPS ↓
 
 .step {
     display: flex;
-    margin-top: 48px
+    margin-top: 48px;
 }
 
 .step__number {
@@ -1220,19 +1219,20 @@ TESTIMONIALS ↓
 }
 
 .testimonials__description {
+    width: 55%;
     display: flex;
     flex-direction: column;
     padding-left: 64px;
 }
 
-#testimonial .container {
+#testimonials .container {
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
 
-.testimonials__img,
-.testimonials__description {
-    width: 100%;
+.testimonials__img {
+    width: 45%;
+    max-width: 500px
 }
 
 .testimonial__img {
