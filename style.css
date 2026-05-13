@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    padding: 96px 0;
+    padding: 120px 0;
 }
 
 .purple {
@@ -45,6 +45,15 @@ section {
 
 main {
     margin-bottom: 96px;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.25;
 }
 
 
@@ -502,6 +511,7 @@ main {
 .feature__row {
     display: flex;
     align-items: flex-start;
+    padding: 32px 24px;
 }
 
 .feature__img--wrapper {
@@ -609,9 +619,11 @@ QUALITY WORK ↓
 }
 
 .section__title {
+    font-size: 48px;
     font-weight: 900; 
     color: rgb(36, 62, 99);
-    margin: 16px 0;
+    line-height: 1.25;
+    margin: 16px 0 25 0;
     letter-spacing: 0.025em;
 }
 
@@ -624,7 +636,8 @@ QUALITY WORK ↓
 .section__para {
     font-weight: 500;
     color: #7c8ba1;
-    line-height: 1.625;
+    line-height: 1.8;
+    margin-top: 24px;
 }
 
 #quality .btn {
@@ -632,6 +645,7 @@ QUALITY WORK ↓
 }
 
 .btn {
+    margin-top: 32px;
     background-color: #6415ff;
     padding: 12px 32px;
     border: none;
@@ -703,11 +717,13 @@ STEPS ↓
 
     .testimonial__img,
     .testimonials__description {
-        width: 100%;
+        width: 50%;
+        max-width: 500px;
     }
     
     .testimonials__description {
-        padding-left: 0;
+        padding-left: 64px;
+        width: 55%;
         text-align: center;
     }
 
@@ -772,7 +788,7 @@ STEPS ↓
 
 .step {
     display: flex;
-    margin-top: 32px;
+    margin-top: 48px
 }
 
 .step__number {
